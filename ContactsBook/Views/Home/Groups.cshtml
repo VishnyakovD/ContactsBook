@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="js-group-body">
+
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary" onclick="groupManager.createGroup()">Create</button>
+            <button disabled="disabled" type="button" class="btn btn-primary js-edit" onclick="groupManager.editGroup()">Edit</button>
+            <button type="button" class="btn btn-primary" onclick="groupManager.removeGroups()">Delete</button>
+            <button type="button" class="btn btn-primary js-select">Select</button>
+        </div>
+        <br />
+
+    </div>
+</div>
+
+<div class="modal fade js-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title js-modal-title"></h4>
+            </div>
+            <div class="modal-body js-modal-body">
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="modalManager.save()" data-dismiss="modal">Save</button>
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
