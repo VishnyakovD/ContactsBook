@@ -23,3 +23,4 @@ $(function () {
         modalManager = new ModalManager();
     }
 });
+//# sourceMappingURL=modal.js.map

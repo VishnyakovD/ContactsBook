@@ -104,3 +104,4 @@ $(function () {
         groupManager.selectGruop(e);
     });
 });
+//# sourceMappingURL=group.js.map
